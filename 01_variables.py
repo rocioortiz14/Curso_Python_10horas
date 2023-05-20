@@ -1,5 +1,7 @@
 # Variables
 
+# Variables
+
 my_string_variable = "My String variable"
 print(my_string_variable)
 
@@ -43,5 +45,8 @@ address = True
 address = 5
 address = 1.2
 print(type(address))
+
+
+# el tipado de python es dinamico
 
 
