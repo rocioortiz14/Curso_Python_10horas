@@ -1,58 +1,41 @@
-# Curso_Python_10horas
+# Curso_Python_7Horas_Intermedio
 
-## Anotaciones Personales 
-El codigo esta comentado para cuestiones de uso personal y recordatorio 
+## Dates
+- Se importan las clases necesarias del módulo datetime para trabajar con fechas y tiempos en Python.
+- Se utiliza datetime.now() para obtener la fecha y hora actual y se almacena en la variable now.
+- La función print_date(date) se define para imprimir los atributos de una fecha, como el año, mes, día, hora, minutos, segundos y marca de tiempo.
+- Se llama a la función print_date(now) para imprimir los atributos de la fecha actual.
+- Se realiza la resta entre year_2023 y current_date y se obtiene la diferencia en días.
+- Se crean dos objetos timedelta con valores de tiempo y se realiza la resta y suma entre ellos, imprimiendo los resultados.
 
-## Lección 1: Introducción a Python
+## Comprensión de listas
+- Se crea una lista original llamada my_original_list con los números del 0 al 7 y se imprime.
+- Se crea un rango de números del 0 al 7 utilizando range(8) y se convierte en una lista utilizando list(my_range). Luego, se imprime esta lista.
+- Se define una nueva lista llamada my_list utilizando List Comprehension, donde cada elemento es el número original más 1. Se utiliza la expresión i + 1 y el bucle for i in range(8) para generar la lista. Se imprime esta nueva lista.
+- Se define otra nueva lista llamada my_list utilizando List Comprehension, donde cada elemento es el número original multiplicado por 2. Se utiliza la expresión i * 2 y el bucle for i in range(8) para generar la lista. Se imprime esta nueva lista.
 
-- Python es un lenguaje de programación de alto nivel y fácil de aprender.
-- Se utiliza ampliamente en el desarrollo web, análisis de datos, inteligencia artificial, entre otros.
-- Python es conocido por su sintaxis clara y legible.
-- Podemos ejecutar Python en diferentes entornos, como la línea de comandos, el intérprete interactivo o mediante la creación de scripts.
+## Retos tomados de https://retosdeprogramacion.com/semanales2023
 
-## Lección 2: Variables y Tipos de Datos
 
-- Las variables son contenedores que almacenan valores.
-- Podemos asignar valores a variables usando el operador de asignación "=".
-- Los tipos de datos básicos en Python son: int (entero), float (punto flotante), str (cadena de texto) y bool (booleano).
-- Podemos realizar operaciones aritméticas y concatenación de cadenas con variables.
+## Lambdas
+Funciones anónimas y concisas en Python. Las lambdas se utilizan cuando se necesita una función simple sin definirla formalmente, y son especialmente útiles en combinación con funciones de orden superior o para expresiones breves.
+- Se define una función lambda llamada sum_two_values que suma dos valores. Utiliza la sintaxis lambda first_value, second_value: first_value + second_value.
+- Se llama a la función lambda sum_two_values con argumentos 2 y 4 utilizando sum_two_values(2, 4), y se imprime el resultado.
+- Se define otra función lambda llamada multiply_values que multiplica dos valores y resta 3. Utiliza la sintaxis lambda first_value, second_value: first_value * second_value - 3.
+- Se llama a la función lambda multiply_values con argumentos 2 y 4 utilizando multiply_values(2, 4), y se imprime el resultado.
+- Se define una función sum_three_values que retorna una función lambda para sumar tres valores. La función interna lambda utiliza first_value, second_value, y el valor recibido como argumento value en la función externa. La sintaxis es lambda first_value, second_value: first_value + second_value + value.
 
-## Lección 3: Estructuras de Control (if-else-while-for)
+## Funciones de Orden Superior 
+- Se define la función sum_one que suma 1 a un valor dado.
+- Se define la función sum_five que suma 5 a un valor dado.
+- Se define la función sum_two_values_and_add_value que recibe dos valores y una función de suma. Retorna la suma de los dos valores utilizando la función de suma proporcionada.
+- Se llama a la función sum_two_values_and_add_value con los valores 5, 2 y la función sum_one, y se imprime el resultado.
+- Se llama a la función sum_two_values_and_add_value con los valores 5, 2 y la función sum_five, y se imprime el resultado.
 
-- Las estructuras de control nos permiten controlar el flujo de ejecución de un programa.
-- La estructura if-else se utiliza para tomar decisiones basadas en condiciones.
-- Los bucles while y for se utilizan para ejecutar código repetidamente.
-- Podemos usar break y continue para controlar la ejecución dentro de bucles.
- 
-## Lección 4 y 5: Listas y Tuplas
-
-- Las listas y tuplas son colecciones de elementos en Python.
-- Las listas son mutables, lo que significa que se pueden modificar después de su creación.
-- Las tuplas son inmutables, lo que significa que no se pueden modificar después de su creación.
-- Podemos acceder a los elementos de una lista o tupla mediante su índice.
-
-## Lección 6: Sets
-- Los conjuntos (sets) en Python son estructuras de datos que contienen elementos únicos y no ordenados. 
-- Se pueden crear utilizando llaves {} o la función predefinida set().
-- Los conjuntos son ideales cuando se necesita almacenar elementos únicos y no se requiere un orden específico.
-- Esto puede ser útil, por ejemplo, para eliminar duplicados de una lista o verificar la presencia de elementos   sin importar el orden.
-- En el video, se explica cómo agregar elementos a un conjunto utilizando el método add() y cómo eliminar  elementos con el método remove().
-- Además, se exploran operaciones comunes con conjuntos, como la unión (operador | o método union()), la intersección (operador & o método intersection()) y la diferencia (operador - o método difference()).
-- Se menciona que los conjuntos son mutables, lo que significa que se pueden modificar después de su creación. 
-- Al finalizar la sección sobre conjuntos, se enfatiza la eficiencia de los conjuntos para realizar operaciones  como la eliminación de duplicados o la búsqueda de elementos únicos.
-
-## Lección 7: Diccionarios (dicts):
-
-- Los diccionarios en Python son estructuras de datos que almacenan pares de clave-valor. Cada valor se accede mediante su clave, en lugar de un índice numérico como en las listas.
-- Los diccionarios son útiles cuando se necesita almacenar y recuperar datos mediante un identificador único (clave).
-- En el video, se muestra cómo crear un diccionario utilizando llaves {} y especificando las claves y los valores correspondientes.
-- Se explica cómo acceder a los valores de un diccionario mediante la sintaxis diccionario[clave], y cómo modificar y eliminar elementos utilizando las funciones update() y pop(), respectivamente.
-- Además, se exploran métodos como keys(), values() y items(), que permiten obtener listas de las claves, los valores o los pares clave-valor del diccionario.
-
-## Lección 8: Funciones
-
-- Las funciones nos permiten dividir el código en bloques más pequeños y reutilizables.
-- Podemos definir nuestras propias funciones en Python utilizando la palabra clave def.
-- Las funciones pueden recibir parámetros y devolver valores.
-- Podemos usar la declaración return para devolver un valor desde una función.
-
+## Tipos de Errores
+- Se muestra un ejemplo de SyntaxError al comentar la línea # print "¡Hola comunidad!". Esto se debe a que en Python 3.x, la función print requiere paréntesis para su uso adecuado.
+- Se muestra un ejemplo de NameError al intentar imprimir la variable language sin haberla definido previamente. Al comentar la línea language = "Spanish", se produce este error.
+- Se muestra un ejemplo de IndexError al intentar acceder a elementos de una lista utilizando índices que están fuera de rango. Al descomentar la línea # print(my_list[5]), se produce este error.
+- Se muestra un ejemplo de ModuleNotFoundError al intentar importar un módulo inexistente. Al descomentar la línea # import maths, se produce este error.
+- Se muestra un ejemplo de AttributeError al intentar acceder a un atributo inexistente de un módulo. Al descomentar la línea # print(math.PI), se produce este error.
+- Otros.

@@ -1,4 +1,4 @@
-# Curso_Python_10horas
+# Curso_Python_10horas_Principiante
 
 ## Anotaciones Personales 
 El codigo esta comentado para cuestiones de uso personal y recordatorio 
