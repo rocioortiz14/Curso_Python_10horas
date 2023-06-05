@@ -34,7 +34,8 @@ El codigo esta comentado para cuestiones de uso personal y recordatorio
 ## Lección 6: Sets
 - Los conjuntos (sets) en Python son estructuras de datos que contienen elementos únicos y no ordenados. 
 - Se pueden crear utilizando llaves {} o la función predefinida set().
-- Los conjuntos son ideales cuando se necesita almacenar elementos únicos y no se requiere un orden específico. - Esto puede ser útil, por ejemplo, para eliminar duplicados de una lista o verificar la presencia de elementos   sin importar el orden.
+- Los conjuntos son ideales cuando se necesita almacenar elementos únicos y no se requiere un orden específico.
+- Esto puede ser útil, por ejemplo, para eliminar duplicados de una lista o verificar la presencia de elementos   sin importar el orden.
 - En el video, se explica cómo agregar elementos a un conjunto utilizando el método add() y cómo eliminar  elementos con el método remove().
 - Además, se exploran operaciones comunes con conjuntos, como la unión (operador | o método union()), la intersección (operador & o método intersection()) y la diferencia (operador - o método difference()).
 - Se menciona que los conjuntos son mutables, lo que significa que se pueden modificar después de su creación. 
@@ -47,7 +48,7 @@ El codigo esta comentado para cuestiones de uso personal y recordatorio
 - En el video, se muestra cómo crear un diccionario utilizando llaves {} y especificando las claves y los valores correspondientes.
 - Se explica cómo acceder a los valores de un diccionario mediante la sintaxis diccionario[clave], y cómo modificar y eliminar elementos utilizando las funciones update() y pop(), respectivamente.
 - Además, se exploran métodos como keys(), values() y items(), que permiten obtener listas de las claves, los valores o los pares clave-valor del diccionario.
-- 
+
 ## Lección 8: Funciones
 
 - Las funciones nos permiten dividir el código en bloques más pequeños y reutilizables.
