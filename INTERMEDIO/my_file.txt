@@ -1,0 +1,6 @@
+Mi nombre es Rocio
+Mi apellido es Ochoa
+35 años
+Y mi lenguaje preferido es Python
+Aunque también me gusta PHP
+Y Swift
